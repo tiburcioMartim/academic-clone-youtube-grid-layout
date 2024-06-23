@@ -1,3 +1,5 @@
+@import url(global.css);
+
 #hdr-container {
     padding: .5rem;
     display: grid;
@@ -9,6 +11,10 @@
 #hdr-container img {
     height: 24px;
     padding: 4px;
+}
+
+#hdr-container img:hover{
+    cursor: pointer;
 }
 
 .logo-youtube {
