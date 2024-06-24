@@ -2,8 +2,10 @@
 
 #main-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, 100px);
+    justify-content: center;
+    grid-template-columns: 180px repeat(3, 1fr);
+    grid-template-rows: repeat(4, 250px);
+    /* border: 1px solid silver; */
 }
 
 aside {
@@ -12,11 +14,11 @@ aside {
     grid-column: 1;
     grid-row: 1 / 5;
     gap: 1.5rem;
-    padding: 1rem;
+    padding: 1.5rem 0 0 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: aqua;
+    /* border: 1px solid silver; */
 }
 
 .aside-menu-container {
@@ -27,4 +29,41 @@ aside {
 
 .aside-menu-btn:focus {
     font-weight: 900;
+}
+
+.video-container {
+    width: 100%;
+    /* padding: 1.5rem 0 0 1.5rem; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    justify-self: center;
+    /* border: 1px solid silver; */
+}
+
+.video-thumb {
+    width: 100%;
+}
+
+.video-info {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.video-avatar-logo {
+    align-self: baseline;
+    margin-right: .5rem;
+}
+
+.video-title {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.video-title h1, p{
+    width: 180px;
 }
