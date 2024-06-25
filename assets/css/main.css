@@ -7,7 +7,15 @@
     margin: 2.5rem 1.5rem 0 0;
     grid-template-columns: 180px repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
-    /* border: 1px solid silver; */
+}
+
+.closed-menu {
+    display: none;
+}
+
+.shrink-grid {
+    grid-template-columns: repeat(4, 1fr) !important;
+    margin: 2.5rem 1.5rem 0 !important;
 }
 
 aside {
@@ -20,7 +28,6 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* border: 1px solid silver; */
 }
 
 .aside-menu-container {
@@ -64,6 +71,7 @@ aside {
     gap: .5rem;
 }
 
-.video-title h1, p{
+.video-title h1,
+p {
     width: 180px;
 }
