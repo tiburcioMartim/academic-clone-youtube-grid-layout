@@ -3,8 +3,10 @@
 #main-container {
     display: grid;
     justify-content: center;
+    gap: 1rem;
+    margin: 2.5rem 1.5rem 0 0;
     grid-template-columns: 180px repeat(3, 1fr);
-    grid-template-rows: repeat(4, 250px);
+    grid-template-rows: repeat(4, 1fr);
     /* border: 1px solid silver; */
 }
 
@@ -14,7 +16,7 @@ aside {
     grid-column: 1;
     grid-row: 1 / 5;
     gap: 1.5rem;
-    padding: 1.5rem 0 0 1.5rem;
+    margin: -1.5rem 0 0 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -33,19 +35,19 @@ aside {
 
 .video-container {
     width: 100%;
-    /* padding: 1.5rem 0 0 1.5rem; */
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
     justify-self: center;
-    /* border: 1px solid silver; */
 }
 
 .video-thumb {
     width: 100%;
+    border-radius: .5rem;
 }
 
 .video-info {
+    /* min-height: 100px; */
     padding: 1rem 0;
     display: flex;
     flex-direction: row;
